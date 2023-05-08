@@ -1,3 +1,28 @@
 project:
   type: website
   output-dir: docs
+
+toc: true
+number-sections: true
+citation: true
+reference-location: margin
+citation-location: margin
+author:
+  name: Sam Foreman
+  url: https://samforeman.me
+  affiliation: Argonne National Laboratory
+  affiliation-url: https://alcf.anl.gov/about/people/sam-foreman
+theme:
+  light: flatly
+  dark: darkly
+format:
+  html:
+    default-image-extension: svg
+    toc: true
+    code-fold: show
+    embed-resources: true
+    anchor-sections: true
+    highlight-style: atom-one
+    html-math-method: katex
+    code-tools:
+      source: true
