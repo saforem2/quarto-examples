@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "examples/demo/demo.html",
+    "href": "examples/demo/demo.html",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
+  },
+  {
+    "objectID": "examples/demo/demo.html#polar-axis",
+    "href": "examples/demo/demo.html#polar-axis",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
+  },
+  {
+    "objectID": "examples/demo/demo.html#plotly",
+    "href": "examples/demo/demo.html#plotly",
+    "title": "Quarto Basics",
+    "section": "2 Plotly",
+    "text": "2 Plotly\n\n\nCode\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
+  },
+  {
+    "objectID": "examples/demo/demo.html#jupyter-widgets",
+    "href": "examples/demo/demo.html#jupyter-widgets",
+    "title": "Quarto Basics",
+    "section": "3 Jupyter Widgets",
+    "text": "3 Jupyter Widgets\n\n\nCode\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
+  },
+  {
+    "objectID": "examples/demo/demo.html#figures-with-subcaptions",
+    "href": "examples/demo/demo.html#figures-with-subcaptions",
+    "title": "Quarto Basics",
+    "section": "4 Figures with Subcaptions",
+    "text": "4 Figures with Subcaptions\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
+  },
+  {
+    "objectID": "examples/demo/demo.html#mermaid-diagrams",
+    "href": "examples/demo/demo.html#mermaid-diagrams",
+    "title": "Quarto Basics",
+    "section": "5 Mermaid Diagrams",
+    "text": "5 Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
+  },
+  {
+    "objectID": "examples/demo/demo.html#block-layout",
+    "href": "examples/demo/demo.html#block-layout",
+    "title": "Quarto Basics",
+    "section": "6 Block Layout",
+    "text": "6 Block Layout\n\n\n\n6.1 List One\n\nItem A\nItem B\nItem C\n\n\n\n6.2 List Two\n\nItem X\nItem Y\nItem Z"
+  },
+  {
+    "objectID": "examples/demo/demo.html#placing-colorbars",
+    "href": "examples/demo/demo.html#placing-colorbars",
+    "title": "Quarto Basics",
+    "section": "7 Placing Colorbars",
+    "text": "7 Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.1 See the Matplotlib Gallery to explore colorbars further\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2)\nassert isinstance(fig, plt.Figure)\nfig.set_size_inches(20, 8)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nplt.show()"
+  },
+  {
+    "objectID": "examples/demo/demo.html#extras",
+    "href": "examples/demo/demo.html#extras",
+    "title": "Quarto Basics",
+    "section": "8 Extras",
+    "text": "8 Extras\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
+  }
+]
