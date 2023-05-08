@@ -1,0 +1,4 @@
+- source: demo.qmd
+  quarto-pub:
+    - id: 932a6a70-380c-4354-a8f0-9e23765e9539
+      url: 'https://samforeman.quarto.pub/quarto-basics'
