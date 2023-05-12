@@ -2,8 +2,50 @@ project:
   type: website
   output-dir: docs
 
+# port: 4200
+# execute-dir: project
+website:
+  title: "Sam Foreman"
+  twitter-card: true
+  open-graph: true
+  repo-url: https://github.com/saforem2/quarto-examples
+  repo-actions: [edit, issue]
+  google-analytics: G-XVM2Y822Y1
+  sidebar:
+    contents: auto
+  page-footer: 
+    left: "Copyright 2023, Sam Foreman" 
+    right: 
+      - icon: github
+        href: https://github.com/saforem2/quarto-examples
+      - icon: twitter
+        href: https://twitter.com/saforem2
+  navbar:
+    logo: "./assets/default.svg"
+    logo-alt: logo
+    background: "#252525"
+    foreground: "#A9A9B3"
+    # right:
+    #   - icon: github
+    #     href: https://github.com/saforem2/quarto-examples
+    #     aria-label: GitHub
+    left:
+      - href: index.qmd
+        text: Home
+      - href: "./content/slides.md"
+        text: Slides
+      - href: "./content/posts/quarto-demo.qmd"
+        text: Quarto Example
+    tools:
+      - icon: twitter
+        href: https://twitter.com/saforem2
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/saforem2/quarto-examples
+
 toc: true
-number-sections: true
+number-sections: false
 citation: true
 reference-location: margin
 citation-location: margin
@@ -13,16 +55,28 @@ author:
   affiliation: Argonne National Laboratory
   affiliation-url: https://alcf.anl.gov/about/people/sam-foreman
 theme:
-  light: flatly
   dark: darkly
+  light: flatly
 format:
   html:
+    embed-resources: true
+    page-layout: full
     default-image-extension: svg
+    execute:
+      eval: true
+      output: true
+    fig-responsive: true
+    # extract-media: true
     toc: true
     code-fold: show
-    embed-resources: true
     anchor-sections: true
+    # max-width: "66%"
+    linkcolor: "#00B7E5"
     highlight-style: atom-one
     html-math-method: katex
     code-tools:
       source: true
+  # pdf:
+  #   default-image-extension: tex
+# fig-cap-location: margin
+# jupyter: python3
