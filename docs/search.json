@@ -1,192 +1,80 @@
 [
   {
-    "objectID": "examples/demo/demo.html",
-    "href": "examples/demo/demo.html",
+    "objectID": "content/slides.html",
+    "href": "content/slides.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Recent Talks\n\nLarge Scale Training, at Introduction to AI-driven Science on Supercomputers: A Student Training Series, November 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nHyperparameter Management, at 2022 ALCF Simulation, Data, and Learning Workshop, October 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nStatistical Learning, at ATPESC 2022, August 2022 📕 accompanying notebook &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nScientific Data Science: An Emerging Symbiosis, at Argonne National Laboratory, May 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nMachine Learning in HEP, at UNC Greensboro, March 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nAccelerated Sampling Methods for Lattice Gauge Theory, at BNL-HET & RBRC Joint Workshop “DWQ @ 25”, Dec 2021 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nTraining Topological Samplers for Lattice Gauge Theory, ML4HEP, on and off the Lattice @ ECT* Trento, Sep 2021 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nl2hmc-qcd at the MIT Lattice Group Seminar, 2021\nDeep Learning HMC for Improved Gauge Generation to the Machine Learning Techniques in Lattice QCD Workshop, 2021\nMachine Learning for Lattice QCD at the University of Iowa, 2020 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nMachine learning inspired analysis of the Ising model transition to Lattice, 2018\nMachine Learning Analysis of Ising Worms at Brookhaven National Laboratory, 2017\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{foreman,\n  author = {Foreman, Sam},\n  title = {Slides},\n  url = {https://87ceaf89-db22-41c3-aef1-dd7e61e39a82.netlify.app//content/slides.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nForeman, Sam. n.d. “Slides.” https://87ceaf89-db22-41c3-aef1-dd7e61e39a82.netlify.app//content/slides.html."
+  },
+  {
+    "objectID": "content/posts/quarto-demo.html",
+    "href": "content/posts/quarto-demo.html",
     "title": "Quarto Basics",
     "section": "",
     "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
   },
   {
-    "objectID": "examples/demo/demo.html#polar-axis",
-    "href": "examples/demo/demo.html#polar-axis",
+    "objectID": "content/posts/quarto-demo.html#polar-axis",
+    "href": "content/posts/quarto-demo.html#polar-axis",
     "title": "Quarto Basics",
     "section": "",
     "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
   },
   {
-    "objectID": "examples/demo/demo.html#plotly",
-    "href": "examples/demo/demo.html#plotly",
+    "objectID": "content/posts/quarto-demo.html#plotly",
+    "href": "content/posts/quarto-demo.html#plotly",
     "title": "Quarto Basics",
-    "section": "2 Plotly",
-    "text": "2 Plotly\n\n\nCode\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
+    "section": "Plotly",
+    "text": "Plotly\n\n\nCode\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
   },
   {
-    "objectID": "examples/demo/demo.html#jupyter-widgets",
-    "href": "examples/demo/demo.html#jupyter-widgets",
+    "objectID": "content/posts/quarto-demo.html#jupyter-widgets",
+    "href": "content/posts/quarto-demo.html#jupyter-widgets",
     "title": "Quarto Basics",
-    "section": "3 Jupyter Widgets",
-    "text": "3 Jupyter Widgets\n\n\nCode\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
+    "section": "Jupyter Widgets",
+    "text": "Jupyter Widgets\n\n\nCode\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
   },
   {
-    "objectID": "examples/demo/demo.html#figures-with-subcaptions",
-    "href": "examples/demo/demo.html#figures-with-subcaptions",
+    "objectID": "content/posts/quarto-demo.html#figures-with-subcaptions",
+    "href": "content/posts/quarto-demo.html#figures-with-subcaptions",
     "title": "Quarto Basics",
-    "section": "4 Figures with Subcaptions",
-    "text": "4 Figures with Subcaptions\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
+    "section": "Figures with Subcaptions",
+    "text": "Figures with Subcaptions\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
   },
   {
-    "objectID": "examples/demo/demo.html#mermaid-diagrams",
-    "href": "examples/demo/demo.html#mermaid-diagrams",
+    "objectID": "content/posts/quarto-demo.html#mermaid-diagrams",
+    "href": "content/posts/quarto-demo.html#mermaid-diagrams",
     "title": "Quarto Basics",
-    "section": "5 Mermaid Diagrams",
-    "text": "5 Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
+    "section": "Mermaid Diagrams",
+    "text": "Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
   },
   {
-    "objectID": "examples/demo/demo.html#block-layout",
-    "href": "examples/demo/demo.html#block-layout",
+    "objectID": "content/posts/quarto-demo.html#block-layout",
+    "href": "content/posts/quarto-demo.html#block-layout",
     "title": "Quarto Basics",
-    "section": "6 Block Layout",
-    "text": "6 Block Layout\n\n\n\n6.1 List One\n\nItem A\nItem B\nItem C\n\n\n\n6.2 List Two\n\nItem X\nItem Y\nItem Z"
+    "section": "Block Layout",
+    "text": "Block Layout\n\n\n\nList One\n\nItem A\nItem B\nItem C\n\n\n\nList Two\n\nItem X\nItem Y\nItem Z"
   },
   {
-    "objectID": "examples/demo/demo.html#placing-colorbars",
-    "href": "examples/demo/demo.html#placing-colorbars",
+    "objectID": "content/posts/quarto-demo.html#placing-colorbars",
+    "href": "content/posts/quarto-demo.html#placing-colorbars",
     "title": "Quarto Basics",
-    "section": "7 Placing Colorbars",
-    "text": "7 Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.1 See the Matplotlib Gallery to explore colorbars further\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2, figsize=(16, 12))\nassert isinstance(fig, plt.Figure)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nax.grid(False)\nplt.show()"
+    "section": "Placing Colorbars",
+    "text": "Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.1 See the Matplotlib Gallery to explore colorbars further\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2, figsize=(16, 12))\nassert isinstance(fig, plt.Figure)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nax.grid(False)\nplt.show()"
   },
   {
-    "objectID": "examples/demo/demo.html#extras",
-    "href": "examples/demo/demo.html#extras",
+    "objectID": "content/posts/quarto-demo.html#extras",
+    "href": "content/posts/quarto-demo.html#extras",
     "title": "Quarto Basics",
-    "section": "8 Extras",
-    "text": "8 Extras\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
+    "section": "Extras",
+    "text": "Extras\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
   },
   {
-    "objectID": "examples/demo/slides-revealjs.html#polar-axis",
-    "href": "examples/demo/slides-revealjs.html#polar-axis",
-    "title": "Quarto Basics",
-    "section": "1 Polar Axis",
-    "text": "1 Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 1\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#plotly",
-    "href": "examples/demo/slides-revealjs.html#plotly",
-    "title": "Quarto Basics",
-    "section": "2 Plotly",
-    "text": "2 Plotly\n\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#jupyter-widgets",
-    "href": "examples/demo/slides-revealjs.html#jupyter-widgets",
-    "title": "Quarto Basics",
-    "section": "3 Jupyter Widgets",
-    "text": "3 Jupyter Widgets\n\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#figures-with-subcaptions",
-    "href": "examples/demo/slides-revealjs.html#figures-with-subcaptions",
-    "title": "Quarto Basics",
-    "section": "4 Figures with Subcaptions",
-    "text": "4 Figures with Subcaptions\n\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#mermaid-diagrams",
-    "href": "examples/demo/slides-revealjs.html#mermaid-diagrams",
-    "title": "Quarto Basics",
-    "section": "5 Mermaid Diagrams",
-    "text": "5 Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#block-layout",
-    "href": "examples/demo/slides-revealjs.html#block-layout",
-    "title": "Quarto Basics",
-    "section": "6 Block Layout",
-    "text": "6 Block Layout\n\n\n\n6.1 List One\n\nItem A\nItem B\nItem C\n\n\n\n6.2 List Two\n\nItem X\nItem Y\nItem Z"
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#placing-colorbars",
-    "href": "examples/demo/slides-revealjs.html#placing-colorbars",
-    "title": "Quarto Basics",
-    "section": "7 Placing Colorbars",
-    "text": "7 Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2, figsize=(16, 12))\nassert isinstance(fig, plt.Figure)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nax.grid(False)\nplt.show()\n\n\n\n\n\nSee the Matplotlib Gallery to explore colorbars further"
-  },
-  {
-    "objectID": "examples/demo/slides-revealjs.html#extras",
-    "href": "examples/demo/slides-revealjs.html#extras",
-    "title": "Quarto Basics",
-    "section": "8 Extras",
-    "text": "8 Extras\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "old/index.html",
+    "href": "old/index.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\nAbout Me\nI’m currently an Assistant Computational Scientist working in the data science group at the Leadership Computing Facility at Argonne National Laboratory.\nI’m generally interested in the application of machine learning to computational problems in physics, particularly within the context of high performance computing. My current research focuses on using deep generative modeling to help build better sampling algorithms in lattice gauge theory. In particular, I’m interested in building gauge equivariant neural network architectures and using inductive priors to incorporate physical symmetries into machine learning models.\nI received my PhD in Physics from the University of Iowa in 2019 and my thesis was on Learning Better Physics: A Machine Learning Approach to Lattice Gauge Theory. Prior to this, I completed two bachelors degrees (Engineering Physics and Applied Mathematics, 2015) from The University of Illinois at Urbana-Champaign. My undergraduate dissertation was titled Energy Storage in Quantum Resonators and was supervised by Professor Alfred Hübler within the Center for Complex Systems Research at UIUC.\n\n\nRecent Work\n\nM. Zvyagin, A. Brace, K. Hippe, et. al GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics, Oct 2022\nA.S. Kronfeld et al. Lattice QCD and Particle Physics, 15 Jul 2022\nD. Boyda, Salvatore Calí, S. Foreman, et al., Applications of Machine Learning to Lattice Quantum Field Theory arXiv:2202.05838, Feb 2022\nS. Foreman, X.Y. Jin, J.C. Osborn, LeapFrogLayers: Trainable Framework for Effective Topological Sampling, slides, Lattice, 2021\nS. Foreman L. Jin, X.Y. Jin, A. Tomiya, J.C. Osborn, & T. Izubuchi, HMC with Normalizing Flows, slides, Lattice, 2021\nS. Foreman, X.Y. Jin, & J.C. Osborn, Deep Learning Hamiltonian Monte Carlo (+ poster) at SimDL Workshop @ ICLR, 2021\nS. Foreman, X.Y. Jin, & J.C. Osborn, Machine Learning and Neural Networks for Field Theory SnowMass, 2020\nS. Foreman Y. Meurice, J. Giedt & J. Unmuth-Yockey Examples of renormalization group transformations for image sets Physical Review E., 2018\nS. Foreman, J. Giedt, Y. Meurice, & J. Unmuth-Yockey RG inspired Machine Learning for lattice field theory arXiv:1710.02079, 2017\nS. Foreman, J. Liu, & L. Wortsmann Large Energy Density in Three-Plate Nanocapacitors due to Coulomb Blockade J. Appl. Phys, 2018\n\n\n\nInvited Talks\n\nLarge Scale Training, at Introduction to AI-driven Science on Supercomputers: A Student Training Series, November 2022\nHyperparameter Management, at 2022 ALCF Simulation, Data, and Learning Workshop, October 2022 \nStatistical Learning, at ATPESC 2022, August 2022 📕 accompanying notebook\nScientific Data Science: An Emerging Symbiosis, at Argonne National Laboratory, May 2022   \nMachine Learning in HEP, at UNC Greensboro, March 2022   \nAccelerated Sampling Methods for Lattice Gauge Theory, at BNL-HET & RBRC Joint Workshop “DWQ @ 25”, Dec 2021   \nTraining Topological Samplers for Lattice Gauge Theory, ML4HEP, on and off the Lattice @ ECT* Trento, Sep 2021   \nl2hmc-qcd at the MIT Lattice Group Seminar, 2021\nDeep Learning HMC for Improved Gauge Generation to the Machine Learning Techniques in Lattice QCD Workshop, 2021\nMachine Learning for Lattice QCD at the University of Iowa, 2020   \n\n\n\nMachine learning inspired analysis of the Ising model transition to Lattice, 2018\nMachine Learning Analysis of Ising Worms at Brookhaven National Laboratory, 2017\n\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nYou can get a live view of some of my recent talks here\n\n\n\n\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{foreman2021,\n  author = {Foreman, Sam},\n  title = {},\n  date = {2021-11-24},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nForeman, Sam. 2021. November 24, 2021."
-  },
-  {
-    "objectID": "content/demo.html",
-    "href": "content/demo.html",
-    "title": "Quarto Basics",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
-  },
-  {
-    "objectID": "content/demo.html#polar-axis",
-    "href": "content/demo.html#polar-axis",
-    "title": "Quarto Basics",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
-  },
-  {
-    "objectID": "content/demo.html#plotly",
-    "href": "content/demo.html#plotly",
-    "title": "Quarto Basics",
-    "section": "2 Plotly",
-    "text": "2 Plotly\n\n\nCode\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
-  },
-  {
-    "objectID": "content/demo.html#jupyter-widgets",
-    "href": "content/demo.html#jupyter-widgets",
-    "title": "Quarto Basics",
-    "section": "3 Jupyter Widgets",
-    "text": "3 Jupyter Widgets\n\n\nCode\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
-  },
-  {
-    "objectID": "content/demo.html#figures-with-subcaptions",
-    "href": "content/demo.html#figures-with-subcaptions",
-    "title": "Quarto Basics",
-    "section": "4 Figures with Subcaptions",
-    "text": "4 Figures with Subcaptions\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
-  },
-  {
-    "objectID": "content/demo.html#mermaid-diagrams",
-    "href": "content/demo.html#mermaid-diagrams",
-    "title": "Quarto Basics",
-    "section": "5 Mermaid Diagrams",
-    "text": "5 Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
-  },
-  {
-    "objectID": "content/demo.html#block-layout",
-    "href": "content/demo.html#block-layout",
-    "title": "Quarto Basics",
-    "section": "6 Block Layout",
-    "text": "6 Block Layout\n\n\n\n6.1 List One\n\nItem A\nItem B\nItem C\n\n\n\n6.2 List Two\n\nItem X\nItem Y\nItem Z"
-  },
-  {
-    "objectID": "content/demo.html#placing-colorbars",
-    "href": "content/demo.html#placing-colorbars",
-    "title": "Quarto Basics",
-    "section": "7 Placing Colorbars",
-    "text": "7 Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.1 See the Matplotlib Gallery to explore colorbars further\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2, figsize=(16, 12))\nassert isinstance(fig, plt.Figure)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nax.grid(False)\nplt.show()"
-  },
-  {
-    "objectID": "content/demo.html#extras",
-    "href": "content/demo.html#extras",
-    "title": "Quarto Basics",
-    "section": "8 Extras",
-    "text": "8 Extras\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
+    "text": "Code\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{foreman,\n  author = {Foreman, Sam},\n  url = {https://87ceaf89-db22-41c3-aef1-dd7e61e39a82.netlify.app//old},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nForeman, Sam. n.d. https://87ceaf89-db22-41c3-aef1-dd7e61e39a82.netlify.app//old."
   },
   {
     "objectID": "old/examples-1/demo/demo.html",
@@ -252,136 +140,10 @@
     "text": "Extras\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
   },
   {
-    "objectID": "content/slides.html",
-    "href": "content/slides.html",
-    "title": "Slides",
-    "section": "",
-    "text": "Recent Talks\n\nLarge Scale Training, at Introduction to AI-driven Science on Supercomputers: A Student Training Series, November 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nHyperparameter Management, at 2022 ALCF Simulation, Data, and Learning Workshop, October 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nStatistical Learning, at ATPESC 2022, August 2022 📕 accompanying notebook &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nScientific Data Science: An Emerging Symbiosis, at Argonne National Laboratory, May 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nMachine Learning in HEP, at UNC Greensboro, March 2022 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nAccelerated Sampling Methods for Lattice Gauge Theory, at BNL-HET & RBRC Joint Workshop “DWQ @ 25”, Dec 2021 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nTraining Topological Samplers for Lattice Gauge Theory, ML4HEP, on and off the Lattice @ ECT* Trento, Sep 2021 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nl2hmc-qcd at the MIT Lattice Group Seminar, 2021\nDeep Learning HMC for Improved Gauge Generation to the Machine Learning Techniques in Lattice QCD Workshop, 2021\nMachine Learning for Lattice QCD at the University of Iowa, 2020 &lt;/p&gt;\n&lt;p&gt;\n&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;\n&lt;/p&gt;\n\nMachine learning inspired analysis of the Ising model transition to Lattice, 2018\nMachine Learning Analysis of Ising Worms at Brookhaven National Laboratory, 2017\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{foreman,\n  author = {Foreman, Sam},\n  title = {Slides},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nForeman, Sam. n.d. “Slides.”"
-  },
-  {
-    "objectID": "old/index.html",
-    "href": "old/index.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{foreman,\n  author = {Foreman, Sam},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nForeman, Sam. n.d."
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#polar-axis",
-    "href": "old/examples-1/demo/slides-revealjs.html#polar-axis",
-    "title": "Quarto Basics",
-    "section": "Polar Axis",
-    "text": "Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 1\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#plotly",
-    "href": "old/examples-1/demo/slides-revealjs.html#plotly",
-    "title": "Quarto Basics",
-    "section": "Plotly",
-    "text": "Plotly\n\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#jupyter-widgets",
-    "href": "old/examples-1/demo/slides-revealjs.html#jupyter-widgets",
-    "title": "Quarto Basics",
-    "section": "Jupyter Widgets",
-    "text": "Jupyter Widgets\n\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#figures-with-subcaptions",
-    "href": "old/examples-1/demo/slides-revealjs.html#figures-with-subcaptions",
-    "title": "Quarto Basics",
-    "section": "Figures with Subcaptions",
-    "text": "Figures with Subcaptions\n\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#mermaid-diagrams",
-    "href": "old/examples-1/demo/slides-revealjs.html#mermaid-diagrams",
-    "title": "Quarto Basics",
-    "section": "Mermaid Diagrams",
-    "text": "Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#block-layout",
-    "href": "old/examples-1/demo/slides-revealjs.html#block-layout",
-    "title": "Quarto Basics",
-    "section": "Block Layout",
-    "text": "Block Layout\n\n\n\nList One\n\nItem A\nItem B\nItem C\n\n\n\nList Two\n\nItem X\nItem Y\nItem Z"
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#placing-colorbars",
-    "href": "old/examples-1/demo/slides-revealjs.html#placing-colorbars",
-    "title": "Quarto Basics",
-    "section": "Placing Colorbars",
-    "text": "Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2, figsize=(16, 12))\nassert isinstance(fig, plt.Figure)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nax.grid(False)\nplt.show()\n\n\n\n\n\nSee the Matplotlib Gallery to explore colorbars further"
-  },
-  {
-    "objectID": "old/examples-1/demo/slides-revealjs.html#extras",
-    "href": "old/examples-1/demo/slides-revealjs.html#extras",
-    "title": "Quarto Basics",
-    "section": "Extras",
-    "text": "Extras\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html",
-    "href": "content/posts/quarto-demo.html",
-    "title": "Quarto Basics",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#polar-axis",
-    "href": "content/posts/quarto-demo.html#polar-axis",
-    "title": "Quarto Basics",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nplt.rcParams.update({\n    'axes.facecolor': 'none',\n    'figure.facecolor': 'none',\n    'savefig.facecolor': 'none',\n    'savefig.format': 'svg',\n    'axes.edgecolor': 'none',\n    'axes.grid': True,\n    'axes.labelcolor': '#666',\n    'axes.titlecolor': '#666',\n    'grid.color': '#666',\n    'text.color': '#666',\n    'grid.linestyle': '--',\n    'grid.linewidth': 0.5,\n    'grid.alpha': 0.4,\n    'xtick.color': 'none',\n    'ytick.color': 'none',\n    'xtick.labelcolor': '#666',\n    'legend.edgecolor': 'none',\n    'ytick.labelcolor': '#666',\n    'savefig.transparent': True,\n})\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfix, ax = plt.subplots(\n    subplot_kw = {'projection': 'polar'}\n)\nassert isinstance(ax, plt.PolarAxes)\nax.plot(theta, r)\nax.set_rticks([0.5, 1., 1.5, 2.])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn order for a figure to be cross-referenceable, its label must start with the fig- prefix."
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#plotly",
-    "href": "content/posts/quarto-demo.html#plotly",
-    "title": "Quarto Basics",
-    "section": "Plotly",
-    "text": "Plotly\n\n\nCode\nimport plotly.express as px\ngapminder = px.data.gapminder()\ngapminder2007 = gapminder.query('year == 2007')\nfig = px.scatter(\n    gapminder2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    size_max=60,\n    hover_name=\"country\",\n    template=\"plotly_dark\",\n)\nfig.show()\n\n\n\n\n                                                \nFigure 2: A plot made using plotly express"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#jupyter-widgets",
-    "href": "content/posts/quarto-demo.html#jupyter-widgets",
-    "title": "Quarto Basics",
-    "section": "Jupyter Widgets",
-    "text": "Jupyter Widgets\n\n\nCode\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#figures-with-subcaptions",
-    "href": "content/posts/quarto-demo.html#figures-with-subcaptions",
-    "title": "Quarto Basics",
-    "section": "Figures with Subcaptions",
-    "text": "Figures with Subcaptions\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\nplt.plot([8,65,23,90])\nplt.show()\n\n\n\n\n\n\n\n\n(a) First\n\n\n\n\n\n\n\n(b) Second\n\n\n\n\nFigure 3: Charts"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#mermaid-diagrams",
-    "href": "content/posts/quarto-demo.html#mermaid-diagrams",
-    "title": "Quarto Basics",
-    "section": "Mermaid Diagrams",
-    "text": "Mermaid Diagrams\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#block-layout",
-    "href": "content/posts/quarto-demo.html#block-layout",
-    "title": "Quarto Basics",
-    "section": "Block Layout",
-    "text": "Block Layout\n\n\n\nList One\n\nItem A\nItem B\nItem C\n\n\n\nList Two\n\nItem X\nItem Y\nItem Z"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#placing-colorbars",
-    "href": "content/posts/quarto-demo.html#placing-colorbars",
-    "title": "Quarto Basics",
-    "section": "Placing Colorbars",
-    "text": "Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.1 See the Matplotlib Gallery to explore colorbars further\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2, figsize=(16, 12))\nassert isinstance(fig, plt.Figure)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nax.grid(False)\nplt.show()"
-  },
-  {
-    "objectID": "content/posts/quarto-demo.html#extras",
-    "href": "content/posts/quarto-demo.html#extras",
-    "title": "Quarto Basics",
-    "section": "Extras",
-    "text": "Extras\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nTesting lists\nTesting\n\nTesting\nTesting again\n\ntriple Checkboxes\n\nNested lists\n\nCheckboxes ??"
+    "text": "Code\n\n\n\n\nAbout Me\nI’m currently an Assistant Computational Scientist working in the data science group at the Leadership Computing Facility at Argonne National Laboratory.\nI’m generally interested in the application of machine learning to computational problems in physics, particularly within the context of high performance computing. My current research focuses on using deep generative modeling to help build better sampling algorithms in lattice gauge theory. In particular, I’m interested in building gauge equivariant neural network architectures and using inductive priors to incorporate physical symmetries into machine learning models.\nI received my PhD in Physics from the University of Iowa in 2019 and my thesis was on Learning Better Physics: A Machine Learning Approach to Lattice Gauge Theory. Prior to this, I completed two bachelors degrees (Engineering Physics and Applied Mathematics, 2015) from The University of Illinois at Urbana-Champaign. My undergraduate dissertation was titled Energy Storage in Quantum Resonators and was supervised by Professor Alfred Hübler within the Center for Complex Systems Research at UIUC.\n\n\nRecent Work\n\nM. Zvyagin, A. Brace, K. Hippe, et. al GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics, Oct 2022\nA.S. Kronfeld et al. Lattice QCD and Particle Physics, 15 Jul 2022\nD. Boyda, Salvatore Calí, S. Foreman, et al., Applications of Machine Learning to Lattice Quantum Field Theory arXiv:2202.05838, Feb 2022\nS. Foreman, X.Y. Jin, J.C. Osborn, LeapFrogLayers: Trainable Framework for Effective Topological Sampling, slides, Lattice, 2021\nS. Foreman L. Jin, X.Y. Jin, A. Tomiya, J.C. Osborn, & T. Izubuchi, HMC with Normalizing Flows, slides, Lattice, 2021\nS. Foreman, X.Y. Jin, & J.C. Osborn, Deep Learning Hamiltonian Monte Carlo (+ poster) at SimDL Workshop @ ICLR, 2021\nS. Foreman, X.Y. Jin, & J.C. Osborn, Machine Learning and Neural Networks for Field Theory SnowMass, 2020\nS. Foreman Y. Meurice, J. Giedt & J. Unmuth-Yockey Examples of renormalization group transformations for image sets Physical Review E., 2018\nS. Foreman, J. Giedt, Y. Meurice, & J. Unmuth-Yockey RG inspired Machine Learning for lattice field theory arXiv:1710.02079, 2017\nS. Foreman, J. Liu, & L. Wortsmann Large Energy Density in Three-Plate Nanocapacitors due to Coulomb Blockade J. Appl. Phys, 2018\n\n\n\nInvited Talks\n\nLarge Scale Training, at Introduction to AI-driven Science on Supercomputers: A Student Training Series, November 2022\nHyperparameter Management, at 2022 ALCF Simulation, Data, and Learning Workshop, October 2022 \nStatistical Learning, at ATPESC 2022, August 2022 📕 accompanying notebook\nScientific Data Science: An Emerging Symbiosis, at Argonne National Laboratory, May 2022   \nMachine Learning in HEP, at UNC Greensboro, March 2022   \nAccelerated Sampling Methods for Lattice Gauge Theory, at BNL-HET & RBRC Joint Workshop “DWQ @ 25”, Dec 2021   \nTraining Topological Samplers for Lattice Gauge Theory, ML4HEP, on and off the Lattice @ ECT* Trento, Sep 2021   \nl2hmc-qcd at the MIT Lattice Group Seminar, 2021\nDeep Learning HMC for Improved Gauge Generation to the Machine Learning Techniques in Lattice QCD Workshop, 2021\nMachine Learning for Lattice QCD at the University of Iowa, 2020   \n\n\n\nMachine learning inspired analysis of the Ising model transition to Lattice, 2018\nMachine Learning Analysis of Ising Worms at Brookhaven National Laboratory, 2017\n\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nYou can get a live view of some of my recent talks here\n\n\n\n\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{foreman2021,\n  author = {Foreman, Sam},\n  title = {},\n  date = {2021-11-24},\n  url = {https://87ceaf89-db22-41c3-aef1-dd7e61e39a82.netlify.app//},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nForeman, Sam. 2021. November 24, 2021. https://87ceaf89-db22-41c3-aef1-dd7e61e39a82.netlify.app//."
   }
 ]
